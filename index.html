@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D+AF 朵芙時尚｜Google Ads 廣告週報 2026.07.06 – 07.12</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+--ink:#12100e; --ink2:#4a453f; --ink3:#8a837a;
+--line:#e3ded5; --line2:#cec7bb;
+--bg:#faf8f5; --card:#fff; --tint:#f3efe8;
+--green:#0f6e56; --greenbg:#e1f5ee;
+--red:#a32d2d; --redbg:#fceaea;
+--amber:#854f0b; --amberbg:#faeeda;
+--blue:#185fa5; --bluebg:#e6f1fb;
+--serif:"Noto Serif TC",Georgia,serif;
+--sans:"Noto Sans TC","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:50}
+.hd{display:flex;align-items:baseline;gap:16px;padding:18px 0 14px;flex-wrap:wrap}
+.brand{font-size:20px;font-weight:700;letter-spacing:-.01em}
+.rep{font-size:14px;color:var(--ink2)}
+.dates{margin-left:auto;font-size:13px;color:var(--ink3);font-variant-numeric:tabular-nums}
+nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px;scrollbar-width:thin}
+nav a{white-space:nowrap;font-size:12px;color:var(--ink2);text-decoration:none;padding:5px 11px;border:1px solid var(--line);border-radius:20px;background:var(--bg)}
+nav a:hover{border-color:var(--ink);color:var(--ink)}
+
+/* page */
+.page{padding:64px 0;border-bottom:1px solid var(--line)}
+.tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:20px}
+h1{font-family:var(--serif);font-size:40px;line-height:1.35;font-weight:700;letter-spacing:-.02em;margin-bottom:24px}
+h2{font-family:var(--serif);font-size:29px;line-height:1.4;font-weight:700;margin-bottom:20px;letter-spacing:-.01em}
+h3{font-size:18px;font-weight:700;margin-bottom:12px}
+.lede{font-size:17px;color:var(--ink2);max-width:78ch;margin-bottom:36px}
+.lede strong{color:var(--ink);font-weight:700}
+p{margin-bottom:14px}
+.muted{color:var(--ink3);font-size:13px}
+
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:32px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.kpi .k{font-size:12px;color:var(--ink3);font-weight:600;letter-spacing:.04em;margin-bottom:8px}
+.kpi .v{font-family:var(--serif);font-size:31px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15;letter-spacing:-.02em}
+.kpi .d{font-size:12px;margin-top:7px;font-variant-numeric:tabular-nums}
+.up{color:var(--green);font-weight:600}
+.dn{color:var(--red);font-weight:600}
+.flat{color:var(--ink3)}
+
+/* three things */
+.things{display:grid;gap:20px;margin:32px 0}
+.thing{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:grid;grid-template-columns:44px 1fr;gap:18px}
+.num{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--line2);line-height:1}
+.thing h3{font-size:18px;margin-bottom:14px;line-height:1.45}
+.row{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+.row .lb{font-size:11px;font-weight:700;color:var(--ink3);letter-spacing:.06em;padding-top:2px}
+.row .tx{font-size:14px;color:var(--ink2)}
+.row .tx strong{color:var(--ink)}
+
+/* two col */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:32px 0}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.box{border-radius:12px;padding:22px 24px;border:1px solid var(--line);background:var(--card)}
+.box.g{background:var(--greenbg);border-color:#b9e3d3}
+.box.r{background:var(--redbg);border-color:#f0c4c4}
+.box h3{font-size:15px;margin-bottom:14px}
+.box ul{list-style:none}
+.box li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:10px 0;border-top:1px solid rgba(0,0,0,.07);font-size:14px;align-items:start}
+.box li:first-child{border-top:none}
+.big{font-family:var(--serif);font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.2}
+.box.g .big{color:var(--green)}
+.box.r .big{color:var(--red)}
+
+/* table */
+.tw{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:680px}
+th{text-align:left;font-size:11px;letter-spacing:.05em;color:var(--ink3);font-weight:700;padding:13px 14px;border-bottom:1px solid var(--line2);white-space:nowrap;background:var(--tint)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:hover{background:var(--tint)}
+.star{color:var(--amber);font-weight:700}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.p-keep{background:var(--greenbg);color:var(--green)}
+.p-up{background:var(--bluebg);color:var(--blue)}
+.p-watch{background:var(--amberbg);color:var(--amber)}
+.p-kill{background:var(--redbg);color:var(--red)}
+tfoot td{background:var(--tint);font-weight:700;border-top:1px solid var(--line2)}
+
+/* chart */
+.ch{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:24px 0}
+.ch h3{font-size:14px;color:var(--ink2);margin-bottom:16px}
+.cbox{position:relative;height:300px}
+.leg{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--ink2);margin-bottom:14px}
+.leg span{display:flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:3px}
+
+/* notice */
+.note{background:var(--amberbg);border:1px solid #e8cd9a;border-radius:12px;padding:18px 22px;margin:24px 0;font-size:13px;color:#6b4308}
+.note strong{display:block;margin-bottom:6px;font-size:14px;color:var(--amber)}
+.note.blue{background:var(--bluebg);border-color:#b5d4f4;color:#0d3d6b}
+.note.blue strong{color:var(--blue)}
+
+/* persona */
+.persona{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:28px 0}
+.ph{background:var(--tint);padding:24px 26px;border-bottom:1px solid var(--line);display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.pav{width:64px;height:64px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:25px;font-weight:700;flex-shrink:0}
+.pname{font-family:var(--serif);font-size:23px;font-weight:700}
+.pmeta{font-size:13px;color:var(--ink3)}
+.pstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.pst{background:var(--card);padding:16px 20px}
+.pst .k{font-size:11px;color:var(--ink3);margin-bottom:5px}
+.pst .v{font-family:var(--serif);font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.pbody{padding:24px 26px;display:grid;gap:20px}
+.pb h4{font-size:13px;font-weight:700;color:var(--ink3);letter-spacing:.05em;margin-bottom:7px}
+.pb p{font-size:14px;color:var(--ink2);margin:0}
+
+/* action */
+.acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:28px 0}
+.act{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+.ah{padding:13px 18px;font-size:13px;font-weight:700;border-bottom:1px solid var(--line)}
+.a-up .ah{background:var(--greenbg);color:var(--green)}
+.a-dn .ah{background:var(--amberbg);color:var(--amber)}
+.a-st .ah{background:var(--redbg);color:var(--red)}
+.a-ts .ah{background:var(--bluebg);color:var(--blue)}
+.act ul{list-style:none;padding:6px 18px 16px}
+.act li{padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}
+.act li:last-child{border-bottom:none}
+.act li b{display:block;font-size:13px;margin-bottom:3px}
+.act li span{color:var(--ink3);font-size:12px}
+
+/* funnel */
+.fun{display:grid;gap:10px;margin:28px 0}
+.fs{display:grid;grid-template-columns:170px 1fr 130px;gap:16px;align-items:center}
+@media(max-width:760px){.fs{grid-template-columns:1fr;gap:5px}}
+.fl{font-size:13px;font-weight:700}
+.fbar{height:38px;background:var(--tint);border-radius:6px;overflow:hidden;position:relative}
+.ff{height:100%;background:var(--ink);display:flex;align-items:center;padding-left:14px;color:#fff;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.ff.warn{background:var(--red)}
+.ff.na{background:repeating-linear-gradient(45deg,var(--line),var(--line) 6px,var(--tint) 6px,var(--tint) 12px);color:var(--ink3)}
+.fd{font-size:12px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.fd b{color:var(--red)}
+
+/* final */
+.final{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:38px 42px;margin:28px 0}
+.final p{font-size:16px;color:var(--ink2);margin-bottom:20px;max-width:74ch}
+.final p:last-child{margin-bottom:0}
+.final strong{color:var(--ink)}
+.pull{font-family:var(--serif);font-size:21px;line-height:1.6;font-weight:700;color:var(--ink);border-left:3px solid var(--ink);padding-left:22px;margin:28px 0}
+
+footer{padding:40px 0 64px;font-size:12px;color:var(--ink3);line-height:1.9}
+@media(max-width:640px){
+ h1{font-size:29px} h2{font-size:23px} .page{padding:44px 0}
+ .thing{grid-template-columns:1fr} .final{padding:26px 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<div class="hd">
+<span class="brand">D+AF 朵芙時尚</span>
+<span class="rep">Google Ads 廣告週報</span>
+<span class="dates">2026.07.06 – 07.12</span>
+</div>
+<nav>
+<a href="#overview">1 · CEO 摘要</a>
+<a href="#best">2 · 最佳活動 TOP 5</a>
+<a href="#worst">3 · 待淘汰活動</a>
+<a href="#audience">4 · 流量情報</a>
+<a href="#intent">5 · 消費者意圖</a>
+<a href="#strategy">6 · 關鍵字策略</a>
+<a href="#action">7 · 行動計畫</a>
+<a href="#dash">8 · 數據儀表板</a>
+<a href="#funnel">9 · 漏斗分析</a>
+<a href="#ceo">10 · CEO 結語</a>
+</nav>
+</div>
+</header>
+
+<!-- PAGE 1 -->
+<section class="page" id="overview">
+<div class="wrap">
+<div class="tag">Page 01 — Executive Summary</div>
+<h1>這週我們沒有多花一塊錢，卻多賺了 8.3 萬——因為錢自己流向了對的地方，不是因為我們做對了什麼。</h1>
+<p class="lede">花費幾乎完全持平（−0.2%），但 ROAS 從 2.71 拉到 <strong>3.60</strong>，營收從 25.5 萬增加到 <strong>33.9 萬（+32.7%）</strong>。這不是預算堆出來的成長。<strong>但同一週，我們有 30.7% 的預算（2.9 萬）投在 ROAS 低於 1 的活動上——包括三檔七天只成交 1 筆的廣告。</strong>成長是真的，浪費也是真的，而且它們同時發生。</p>
+
+<div class="kpis">
+<div class="kpi"><div class="k">花費</div><div class="v">NT$94,074</div><div class="d flat">▬ 0.2% vs 上週 94,259</div></div>
+<div class="kpi"><div class="k">ROAS</div><div class="v">3.60</div><div class="d up">▲ 0.89 vs 2.71</div></div>
+<div class="kpi"><div class="k">轉換數</div><div class="v">1,901</div><div class="d up">▲ 46.0% vs 1,302</div></div>
+<div class="kpi"><div class="k">轉換價值</div><div class="v">NT$338,653</div><div class="d up">▲ 32.7% vs 255,204</div></div>
+<div class="kpi"><div class="k">CPA</div><div class="v">NT$49</div><div class="d up">▼ 31.6% vs NT$72</div></div>
+</div>
+<p class="muted">轉換價值為 Google Ads 直接回傳欄位（conversions_value），非回推值。CPA = 花費 ÷ 轉換數。</p>
+
+<h2 style="margin-top:48px">本週三件重要的事</h2>
+<div class="things">
+
+<div class="thing">
+<div class="num">01</div>
+<div>
+<h3>品牌字撐起半個帳號——這是資產，也是風險</h3>
+<div class="row"><div class="lb">事件</div><div class="tx">「TW｜搜尋｜品牌字」單一活動花掉 NT$30,635（佔 32.6%），帶回 <strong>NT$175,198</strong>，等於全站營收的 <strong>51.7%</strong>。港澳品牌字再貢獻 3.4 萬。</div></div>
+<div class="row"><div class="lb">原因</div><div class="tx">CTR 33.8%——每三個看到的人就有一個點。這不是廣告說服了誰，是<strong>客人本來就要找我們，我們只是付錢站在門口</strong>。港澳品牌字 CPA 僅 NT$16。</div></div>
+<div class="row"><div class="lb">商業影響</div><div class="tx">ROAS 5.72，遠高於全站 3.60。但這也代表：<strong>我們的廣告費有一半是在收割既有品牌力，不是在開發新客</strong>。品牌字愈強，愈掩蓋開發端的弱。</div></div>
+</div>
+</div>
+
+<div class="thing">
+<div class="num">02</div>
+<div>
+<h3>三檔「需求開發」七天燒掉 1.07 萬，成交 1 筆</h3>
+<div class="row"><div class="lb">事件</div><div class="tx">需求開發｜高跟鞋、迪士尼、樂福鞋合計花 <strong>NT$10,678</strong>，買到 66.5 萬次曝光、13,724 次點擊，<strong>總共成交 1 筆，回收 NT$1,130</strong>。</div></div>
+<div class="row"><div class="lb">原因</div><div class="tx">CPC 僅 0.67–0.87 元（全站平均 3.68）。<strong>便宜到不合理的點擊，通常代表買到的是低意圖版位</strong>——使用者滑到就順手點，不是想買鞋。CTR 約 2% 看似正常，但轉換率是 0。</div></div>
+<div class="row"><div class="lb">商業影響</div><div class="tx">這筆錢把後台的曝光與點擊數字撐得很漂亮，<strong>但生意是零</strong>。同樣 1.07 萬放進港澳品牌字（ROAS 8.66），可換回約 9.2 萬營收。</div></div>
+</div>
+</div>
+
+<div class="thing">
+<div class="num">03</div>
+<div>
+<h3>區域型 PMax 被餓著：台北花 719 元，ROAS 7.30</h3>
+<div class="row"><div class="lb">事件</div><div class="tx">「TW｜PMax｜taipei」七天只花 <strong>NT$719</strong>，ROAS <strong>7.30</strong>；台中花 736 元，ROAS 4.52。兩者合計僅佔 1.5% 預算。</div></div>
+<div class="row"><div class="lb">原因</div><div class="tx">明顯是測試活動未被放大。CPC 僅 2.89 元，CPA 24 元——<strong>效率是「TW｜購物｜all」（CPA 3,720 元）的 155 倍</strong>。</div></div>
+<div class="row"><div class="lb">商業影響</div><div class="tx">這是本週最明確的機會，但<strong>必須謹慎</strong>：樣本只有 30 筆轉換，小樣本高 ROAS 放量後回歸平均是常態。建議階梯式加碼，不是一次拉滿。</div></div>
+</div>
+</div>
+
+</div>
+
+<div class="two">
+<div class="box g">
+<h3>📈 成長機會</h3>
+<ul>
+<li><span class="big">8.66</span><span>港澳品牌字 ROAS 全站最高，CPA 僅 16 元，卻只佔 4.2% 預算。</span></li>
+<li><span class="big">7.30</span><span>TW｜PMax｜taipei 日均花費不到 103 元，明顯被限制。</span></li>
+<li><span class="big">5.66</span><span>HK&MO｜PMax｜常態 ROAS 5.66，是台灣同類（2.98）的 1.9 倍。</span></li>
+<li><span class="big">9.48</span><span>TW｜PMax｜常態｜高跟鞋 七天只花 241 元——疑似設定異常。</span></li>
+</ul>
+</div>
+<div class="box r">
+<h3>🚨 風險警示</h3>
+<ul>
+<li><span class="big">30.7%</span><span>全站近三成預算（2.9 萬）投在 ROAS &lt; 1 的活動，淨損約 1.45 萬。</span></li>
+<li><span class="big">0.00</span><span>需求開發｜高跟鞋、迪士尼 七天轉換數為零。</span></li>
+<li><span class="big">0.62</span><span>TW｜購物｜all 花 7,516 元，CPA 3,720 元——全站最差。</span></li>
+<li><span class="big">0.98</span><span>雲織鞋 ROAS 跌破 1.0（前期 2.24），新增虧損來源。</span></li>
+</ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="best">
+<div class="wrap">
+<div class="tag">Page 02 — Best Performers</div>
+<h2>🏆 本週最佳活動 TOP 5</h2>
+<p class="lede">依 ROAS 排序。<strong>重點不是數字排名，是這些活動買到了什麼樣的人。</strong></p>
+
+<div class="note blue">
+<strong>為什麼 Google 版沒有「素材」分析</strong>
+Meta 週報的 TOP 5 是「素材」，因為 Meta 的成敗取決於創意。<strong>Google 搜尋廣告的成敗取決於「關鍵字意圖」</strong>——同一則廣告文案，出現在「D+AF」和出現在「女鞋」下面，結果天差地遠。因此本頁以「活動 × 意圖層級」取代素材分析。此帳號的 PMax 與購物廣告為自動化素材，Google Ads API 亦不提供如 Meta 的完看率／儲存數等創意指標。
+</div>
+
+<div class="tw">
+<table>
+<thead><tr><th>#</th><th>活動</th><th class="n">花費</th><th class="n">營收</th><th class="n">ROAS</th><th class="n">CPA</th><th class="n">CTR</th><th>它買到了什麼人</th></tr></thead>
+<tbody>
+<tr><td class="star">1</td><td><b>TW｜PMax｜常態｜高跟鞋</b></td><td class="n">241</td><td class="n">2,284</td><td class="n"><b>9.48</b></td><td class="n">46</td><td class="n">2.28%</td><td>7 天只花 241 元。<b>不是它厲害，是它幾乎沒被投放</b>——需確認是否誤設限額。</td></tr>
+<tr><td class="star">2</td><td><b>HKMO｜搜尋｜品牌字</b></td><td class="n">3,927</td><td class="n">33,997</td><td class="n"><b>8.66</b></td><td class="n">16</td><td class="n">30.73%</td><td>已經知道 D+AF、且已經想買的港澳客人。CPA 16 元＝<b>全站最便宜的訂單</b>。</td></tr>
+<tr><td>3</td><td><b>TW｜PMax｜taipei</b></td><td class="n">719</td><td class="n">5,250</td><td class="n"><b>7.30</b></td><td class="n">24</td><td class="n">0.54%</td><td>雙北高消費力區域。CTR 低但轉換極準——<b>曝光給對的地區比曝光給多的人有效</b>。</td></tr>
+<tr><td>4</td><td><b>TW｜搜尋｜品牌字</b></td><td class="n">30,635</td><td class="n">175,198</td><td class="n"><b>5.72</b></td><td class="n">31</td><td class="n">33.76%</td><td>全站營收支柱（51.7%）。CTR 33.8%＝<b>搜尋意圖最強的一群人</b>。</td></tr>
+<tr><td>5</td><td><b>HK&MO｜PMax｜常態</b></td><td class="n">4,709</td><td class="n">26,633</td><td class="n"><b>5.66</b></td><td class="n">53</td><td class="n">1.40%</td><td>港澳購物流量。<b>效率是台灣同類活動（2.98）的 1.9 倍</b>——港澳競爭較低。</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">花費／營收單位：NT$。CTR 為點擊率。</p>
+
+<h3 style="margin-top:44px">💡 如果要複製成功：下一步應該怎麼做</h3>
+<div class="things" style="margin-top:20px">
+<div class="thing"><div class="num">A</div><div>
+<h3 style="margin-bottom:8px">先確認「高跟鞋 PMax 為何只花 241 元」——這是零成本的營收</h3>
+<p style="font-size:14px;color:var(--ink2);margin:0">ROAS 9.48 卻幾乎沒有預算。<strong>如果是日預算或出價上限被誤設，解除限制就是立即可得的營收，不需要多花一毛測試費。</strong>這是本週投報率最高的一個動作。</p>
+</div></div>
+<div class="thing"><div class="num">B</div><div>
+<h3 style="margin-bottom:8px">港澳是被系統性低估的市場</h3>
+<p style="font-size:14px;color:var(--ink2);margin:0">港澳三檔活動（品牌字 8.66、PMax 5.66、通用字 2.24）合計只拿走 <strong>12.8% 預算</strong>，卻貢獻 <strong>20.2% 營收</strong>。台灣 PMax 常態 ROAS 2.98，港澳同類 5.66——<strong>同樣的錢，在港澳幾乎多賺一倍</strong>。</p>
+</div></div>
+<div class="thing"><div class="num">C</div><div>
+<h3 style="margin-bottom:8px">區域型 PMax 要「階梯式」放大，不要一次拉滿</h3>
+<p style="font-size:14px;color:var(--ink2);margin:0">台北 ROAS 7.30 只建立在 30 筆轉換上，<strong>樣本太小</strong>。建議每次加 50% 預算、觀察 5–7 天，並設定「ROAS 跌破 4 即停止加碼」的紀律。可複製到高雄、台南、桃園（帳號內已有這些活動，目前未啟用）。</p>
+</div></div>
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="worst">
+<div class="wrap">
+<div class="tag">Page 03 — Underperformers</div>
+<h2>⚠️ 本週需要淘汰或改善的活動</h2>
+<p class="lede">ROAS 低於 1.0 者（即：每花 1 元，收回不到 1 元）。<strong>這五檔合計吃掉 30.7% 的預算，淨損約 NT$14,481。</strong></p>
+
+<div class="tw">
+<table>
+<thead><tr><th>活動</th><th class="n">花費</th><th class="n">營收</th><th class="n">ROAS</th><th class="n">轉換</th><th class="n">CPA</th><th>為什麼失敗</th><th>處置</th></tr></thead>
+<tbody>
+<tr>
+<td><b>TW｜需求開發｜高跟鞋</b></td><td class="n">3,561</td><td class="n">0</td><td class="n"><b>0.00</b></td><td class="n">0</td><td class="n">—</td>
+<td>23.1 萬曝光、5,246 次點擊，<b>CPC 僅 0.68 元</b>。買到的是「滑過去順手點」的流量，不是要買鞋的人。</td>
+<td><span class="pill p-kill">立即關閉</span></td>
+</tr>
+<tr>
+<td><b>TW｜需求開發｜迪士尼</b></td><td class="n">3,559</td><td class="n">0</td><td class="n"><b>0.00</b></td><td class="n">0</td><td class="n">—</td>
+<td>20.8 萬曝光、4,148 次點擊。<b>迪士尼題材吸引的是看熱鬧的人</b>，與購鞋意圖無關。</td>
+<td><span class="pill p-kill">立即關閉</span></td>
+</tr>
+<tr>
+<td><b>TW｜需求開發｜樂福鞋</b></td><td class="n">3,558</td><td class="n">1,130</td><td class="n"><b>0.32</b></td><td class="n">1</td><td class="n">3,558</td>
+<td>22.1 萬曝光換 1 筆訂單。<b>單筆訂單成本 3,558 元</b>，遠高於客單價。</td>
+<td><span class="pill p-kill">立即關閉</span></td>
+</tr>
+<tr>
+<td><b>TW｜購物｜all</b></td><td class="n">7,516</td><td class="n">4,623</td><td class="n"><b>0.62</b></td><td class="n">2.0</td><td class="n">3,720</td>
+<td>CTR 僅 1.13%，8.3 萬曝光只換 941 點擊。<b>商品目錄與搜尋意圖嚴重錯配</b>，且可能與 PMax 常態互相搶量。</td>
+<td><span class="pill p-kill">暫停並診斷</span></td>
+</tr>
+<tr>
+<td><b>TW｜搜尋｜產品字</b></td><td class="n">3,597</td><td class="n">1,683</td><td class="n"><b>0.47</b></td><td class="n">4.0</td><td class="n">899</td>
+<td><b>CPC 高達 52.13 元（全站最貴，是均價的 14 倍）</b>，卻幾乎不轉換。買到高價但無效的搜尋字。</td>
+<td><span class="pill p-kill">暫停＋查字詞</span></td>
+</tr>
+<tr style="background:var(--amberbg)">
+<td><b>TW｜搜尋｜雲織鞋｜台港澳</b></td><td class="n">7,129</td><td class="n">7,002</td><td class="n"><b>0.98</b></td><td class="n">53.7</td><td class="n">133</td>
+<td><b>新增警訊</b>：上期 ROAS 2.24，本週跌破 1.0。CTR 10.85% 仍健康，代表<b>人有進來但沒買</b>——可能缺貨或價格失去競爭力。</td>
+<td><span class="pill p-watch">警戒觀察</span></td>
+</tr>
+</tbody>
+<tfoot>
+<tr><td>合計（ROAS &lt; 1）</td><td class="n">28,919</td><td class="n">14,439</td><td class="n">0.50</td><td class="n">60.7</td><td class="n">476</td><td colspan="2"><b>淨損 NT$14,481，佔全週預算 30.7%</b></td></tr>
+</tfoot>
+</table>
+</div>
+
+<div class="note">
+<strong>⚠ 關閉前必須先確認一件事</strong>
+「需求開發」三檔的轉換數為 0，除了流量品質問題，<strong>也不能完全排除「轉換追蹤未正確掛載於該活動類型」的可能</strong>。若是追蹤失效，數據會低估其真實貢獻，貿然關閉會誤殺。<strong>建議關閉前先請執行團隊確認 Demand Gen 的轉換追蹤設定</strong>——這是 5 分鐘就能查清的事，但可能影響 1.07 萬的判斷。
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="audience">
+<div class="wrap">
+<div class="tag">Page 04 — Traffic Intelligence</div>
+<h2>流量情報</h2>
+
+<div class="note">
+<strong>資料限制說明（與 Meta 版的關鍵差異）</strong>
+Meta 週報有「年齡 × 性別 × 版位 × 頻次」四維受眾分析。<strong>Google Ads 對此廣告帳戶不提供這些拆分</strong>：搜尋廣告依「關鍵字意圖」而非「人口統計」投放，PMax 為黑箱自動化，且 Google 無「頻次（Frequency）」欄位。<strong>本頁以 Google 真正能提供、且真正有決策價值的維度取代：裝置、地區、市場。所有未取得的欄位一律標示 N/A，不做推測。</strong>
+</div>
+
+<div class="ch">
+<h3>裝置別：花費 vs ROAS</h3>
+<div class="leg"><span><span class="sw" style="background:#2a78d6"></span>花費</span><span><span class="sw" style="background:#1baf7a"></span>ROAS</span></div>
+<div class="cbox"><canvas id="devChart" role="img" aria-label="裝置別花費與 ROAS 長條圖：行動裝置花費 76,602 元 ROAS 3.66，電腦 17,700 元 ROAS 3.71，平板 1,300 元 ROAS 1.67。">行動裝置花費 76,602 元、ROAS 3.66；電腦花費 17,700 元、ROAS 3.71；平板花費 1,300 元、ROAS 1.67；聯網電視花費 42 元、ROAS 35.24。</canvas></div>
+</div>
+
+<div class="tw">
+<table>
+<thead><tr><th>裝置</th><th class="n">花費</th><th class="n">佔比</th><th class="n">轉換</th><th class="n">營收</th><th class="n">ROAS</th><th class="n">CPA</th><th class="n">CTR</th></tr></thead>
+<tbody>
+<tr><td><b>行動裝置 ★</b></td><td class="n">76,602</td><td class="n">80.1%</td><td class="n">1,478.1</td><td class="n">280,059</td><td class="n"><b>3.66</b></td><td class="n">52</td><td class="n">2.46%</td></tr>
+<tr><td>電腦</td><td class="n">17,700</td><td class="n">18.5%</td><td class="n">461.3</td><td class="n">65,594</td><td class="n"><b>3.71</b></td><td class="n">38</td><td class="n">1.60%</td></tr>
+<tr><td>平板</td><td class="n">1,300</td><td class="n">1.4%</td><td class="n">14.5</td><td class="n">2,172</td><td class="n">1.67</td><td class="n">90</td><td class="n">1.87%</td></tr>
+<tr><td>聯網電視</td><td class="n">42</td><td class="n">0.04%</td><td class="n">2.0</td><td class="n">1,464</td><td class="n">35.24</td><td class="n">21</td><td class="n">3.96%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">裝置資料區間為 2026-07-07 至 07-13（Google Ads 裝置區隔回傳區間與活動層級相差一日），因此裝置合計與活動合計略有出入。此差異已據實揭露，未作對齊修正。聯網電視樣本僅 2 筆轉換，ROAS 35.24 <b>不具統計意義</b>，不應據此加碼。</p>
+
+<div class="two" style="margin-top:32px">
+<div class="box">
+<h3>裝置洞察</h3>
+<p style="font-size:14px;color:var(--ink2)">行動裝置吃掉 <b>80% 預算</b>，ROAS 3.66；電腦只佔 18.5%，ROAS 卻是 <b>3.71（略高）</b>，且 CPA 更低（38 vs 52 元）。</p>
+<p style="font-size:14px;color:var(--ink2);margin-bottom:0"><b>意義：</b>電腦流量雖少，但「買氣」更純——通常是坐下來認真比價、準備下單的人。不必大改，但<b>若要微調出價，電腦可小幅加碼</b>。平板 ROAS 1.67 偏低，可考慮降低出價調整係數。</p>
+</div>
+<div class="box">
+<h3>市場洞察：港澳 vs 台灣</h3>
+<p style="font-size:14px;color:var(--ink2)">港澳三檔活動合計花 <b>NT$12,070（12.8%）</b>，帶回 <b>NT$68,313（20.2%）</b>，加權 ROAS <b>5.66</b>。</p>
+<p style="font-size:14px;color:var(--ink2);margin-bottom:0">台灣十二檔活動合計花 <b>NT$82,004（87.2%）</b>，帶回 <b>NT$270,340（79.8%）</b>，加權 ROAS <b>3.30</b>。</p>
+<p style="font-size:14px;color:var(--ink);margin-top:10px;margin-bottom:0"><b>→ 港澳的每一塊錢，比台灣多賺 72%。這是本週最大的結構性發現。</b></p>
+</div>
+</div>
+
+<h3 style="margin-top:44px">帳號結構警訊</h3>
+<p style="font-size:15px;color:var(--ink2);max-width:78ch">本帳號共有 <b>404 檔活動</b>，本週<b>僅 15 檔有花費</b>，其餘 389 檔為歷年遺留的舊活動（雙 11、雙 12、代言人、App 下載、實體門市等），且大量重複命名（如「影片 轉換 (常態) - 新客 #2」出現數十次）。</p>
+<p style="font-size:15px;color:var(--ink2);max-width:78ch"><b>這不直接造成金錢損失，但會造成三個風險：</b>（1）誤開舊活動導致預算外流；（2）報表判讀成本高，容易遺漏異常；（3）新進人員接手時難以理解帳戶邏輯。建議本季內封存。</p>
+
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="intent">
+<div class="wrap">
+<div class="tag">Page 05 — Consumer Intent</div>
+<h2>消費者意圖：他們在搜尋什麼，又在哪裡消失</h2>
+
+<div class="note">
+<strong>資料限制說明</strong>
+Meta 版有「留言／儲存／影片完看率」等社群互動訊號。<strong>Google 搜尋廣告沒有這些欄位</strong>——沒有人會對一則搜尋廣告按讚。<strong>Google 的等價訊號是「搜尋意圖層級」</strong>：使用者輸入的字，直接暴露他們處於購買旅程的哪一段。以下依此拆解。另：本報告未執行「搜尋字詞報告（Search Terms Report）」層級查詢，因此無法列出實際搜尋字，僅能以活動意圖分層分析——<b>這正是第 7 頁列為高優先行動的原因</b>。
+</div>
+
+<h3 style="margin-top:32px">意圖分層：從「知道你是誰」到「不知道自己要什麼」</h3>
+<div class="tw">
+<table>
+<thead><tr><th>意圖層級</th><th>代表活動</th><th class="n">花費</th><th class="n">佔比</th><th class="n">ROAS</th><th>消費者當下在想什麼</th></tr></thead>
+<tbody>
+<tr style="background:var(--greenbg)">
+<td><b>① 品牌意圖</b><br><span class="muted">「我要買 D+AF」</span></td>
+<td>TW／HKMO 搜尋｜品牌字</td><td class="n">34,562</td><td class="n">36.7%</td><td class="n"><b>6.05</b></td>
+<td>已決定買，只是在找入口。<b>我們付錢買一個本來就會來的客人</b>——高效率，但零開發性。</td>
+</tr>
+<tr style="background:#f2f8ff">
+<td><b>② 品類意圖</b><br><span class="muted">「我想買女鞋」</span></td>
+<td>TW／HK&MO 搜尋｜通用字</td><td class="n">11,163</td><td class="n">11.9%</td><td class="n"><b>3.47</b></td>
+<td>知道要買鞋，還沒決定品牌。<b>這是真正的戰場</b>，也是唯一能開發新客的搜尋層。</td>
+</tr>
+<tr>
+<td><b>③ 商品意圖</b><br><span class="muted">「我想買雲織鞋」</span></td>
+<td>搜尋｜雲織鞋、購物｜all</td><td class="n">14,645</td><td class="n">15.6%</td><td class="n">0.79</td>
+<td>對特定商品有興趣。<b>但本週全數虧損</b>——人進來了卻沒買，問題極可能在商品頁（缺貨？價格？）。</td>
+</tr>
+<tr>
+<td><b>④ 自動化</b><br><span class="muted">「讓 Google 決定」</span></td>
+<td>PMax 全系列</td><td class="n">14,721</td><td class="n">15.6%</td><td class="n"><b>3.32</b></td>
+<td>混合意圖。台灣常態 2.98、港澳 5.66、區域型 4.5–7.3。<b>區域型明顯優於全域型</b>。</td>
+</tr>
+<tr style="background:var(--redbg)">
+<td><b>⑤ 無意圖</b><br><span class="muted">「我只是在滑手機」</span></td>
+<td>需求開發 3 檔</td><td class="n">10,678</td><td class="n">11.4%</td><td class="n"><b>0.11</b></td>
+<td>沒有任何購買意圖。<b>CPC 0.68–0.87 元的「便宜」是幻覺</b>——買到 13,724 次點擊，成交 1 筆。</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="two" style="margin-top:32px">
+<div class="box">
+<h3>他們為什麼買（從高 ROAS 活動反推）</h3>
+<ul style="list-style:none;font-size:14px;color:var(--ink2)">
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>品牌字 CTR 33.8%</b> — 三分之一的人一看到就點。品牌認知已經建立，這是過去累積的資產。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>港澳 CPA 僅 16 元</b> — 港澳客人的購買決策比台灣更快、更少猶豫。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>通用字 ROAS 4.02</b> — 即使是還沒決定品牌的人，我們也能有效轉換。<b>這證明開發新客是做得到的</b>。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>電腦 CPA 低於行動</b> — 坐下來認真看的人，買得更乾脆。</li>
+</ul>
+</div>
+<div class="box r">
+<h3>他們為什麼不買（負面訊號）</h3>
+<ul style="list-style:none;font-size:14px">
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>雲織鞋 CTR 10.85%，ROAS 卻只有 0.98</b> — <b>人有點進來，但沒買</b>。廣告沒問題，問題在商品頁或價格。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>購物｜all CTR 1.13%</b> — 8.3 萬人看到，只有 941 人點。商品或價格對搜尋者沒有吸引力。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>產品字 CPC 52 元卻幾乎零轉換</b> — 買到高價的錯字。極可能有大量不相關的搜尋字未被否定。</li>
+<li style="grid-template-columns:1fr;padding:8px 0">・<b>需求開發點擊 13,724 次，成交 1 筆</b> — 點的人根本不是要買的人。</li>
+</ul>
+</div>
+</div>
+
+<div class="note blue" style="margin-top:28px">
+<strong>本頁最重要的一句話</strong>
+「雲織鞋」CTR 高達 10.85%（全站第三高），ROAS 卻跌破 1.0。<strong>當「點擊率很高」但「轉換率很差」同時發生，問題幾乎從不在廣告，而在廣告之後的那一頁。</strong>建議立即檢查該商品的庫存、尺碼齊全度與售價競爭力——這是廣告團隊無法自己解決的問題。
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page" id="strategy">
+<div class="wrap">
+<div class="tag">Page 06 — Keyword Strategy</div>
+<h2>關鍵字策略</h2>
+<p class="lede">Meta 的成長槓桿是「素材」；<strong>Google 的成長槓桿是「意圖 × 出價 × 否定字」</strong>。以下是從本週資料萃取的策略公式。</p>
+
+<div class="acts" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+<div class="act">
+<div class="ah" style="background:var(--tint);color:var(--ink)">最強意圖</div>
+<ul>
+<li><b>品牌字（CTR 33.8%）</b><span>已建立的資產。守住，別讓競品標走。</span></li>
+</ul>
+</div>
+<div class="act">
+<div class="ah" style="background:var(--tint);color:var(--ink)">最佳市場</div>
+<ul>
+<li><b>港澳（ROAS 5.66）</b><span>每一塊錢比台灣多賺 72%。競爭尚未飽和。</span></li>
+</ul>
+</div>
+<div class="act">
+<div class="ah" style="background:var(--tint);color:var(--ink)">最佳活動類型</div>
+<ul>
+<li><b>區域型 PMax（4.5–7.3）</b><span>比全域型 PMax（2.98）明顯更準。</span></li>
+</ul>
+</div>
+<div class="act">
+<div class="ah" style="background:var(--tint);color:var(--ink)">最該避開</div>
+<ul>
+<li><b>低 CPC 的廣泛曝光</b><span>CPC 0.68 元的點擊，價值就是 0.68 元。</span></li>
+</ul>
+</div>
+</div>
+
+<h3 style="margin-top:44px">下週 8 個關鍵字／結構方向</h3>
+<div class="tw">
+<table>
+<thead><tr><th>#</th><th>方向</th><th>具體做法</th><th>預期影響</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><b>否定字清理（最高優先）</b></td><td>匯出「產品字」與「購物｜all」近 90 天搜尋字詞報告，找出高花費零轉換字詞，全數加入否定關鍵字。</td><td>直接止血，並降低 CPC（目前 52 元）。</td></tr>
+<tr><td>2</td><td><b>品牌字防禦</b></td><td>檢查競品（達芙妮、ANNS、Grace Gift、Charles & Keith）是否在標我們的品牌字。帳號內已有競品字活動但未啟用。</td><td>保護 51.7% 的營收來源。</td></tr>
+<tr><td>3</td><td><b>港澳擴大</b></td><td>港澳品牌字預算 +50%，觀察 7 天 ROAS 是否維持 6 以上；接著擴 HK&MO PMax。</td><td>單週有機會多創造 8–12 萬營收。</td></tr>
+<tr><td>4</td><td><b>區域型 PMax 複製</b></td><td>台北 7.30、台中 4.52。帳號內已有高雄、台南、桃園活動（未啟用），可比照架構開啟測試。</td><td>擴大高效率的投放模式。</td></tr>
+<tr><td>5</td><td><b>通用字加碼（唯一的開發引擎）</b></td><td>TW 通用字 ROAS 4.02，是唯一能開發新客的搜尋層，目前僅佔 8.2% 預算。</td><td>降低對品牌字的過度依賴。</td></tr>
+<tr><td>6</td><td><b>裝置出價微調</b></td><td>電腦 CPA 38 元 &lt; 行動 52 元。可小幅提高電腦出價調整係數；平板（ROAS 1.67）可調降。</td><td>低風險的效率提升。</td></tr>
+<tr><td>7</td><td><b>雲織鞋商品端診斷</b></td><td>CTR 10.85% 但 ROAS 0.98——檢查庫存、尺碼、售價。<b>這不是廣告問題。</b></td><td>避免 7,129 元／週持續流失。</td></tr>
+<tr><td>8</td><td><b>檔期規劃</b></td><td>618 檔期（ROAS 4.13）結束後無接續檔期，是六月底營收下滑主因。應提前規劃 8 月檔期。</td><td>重建營收支撐。</td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page" id="action">
+<div class="wrap">
+<div class="tag">Page 07 — Action Plan</div>
+<h2>行銷行動計畫</h2>
+
+<div class="acts">
+<div class="act a-up">
+<div class="ah">↑ 增加</div>
+<ul>
+<li><b>港澳品牌字</b><span>ROAS 8.66，CPA 16 元，僅佔 4.2% 預算。建議 +50%。</span></li>
+<li><b>HK&MO PMax 常態</b><span>ROAS 5.66，是台灣同類的 1.9 倍。</span></li>
+<li><b>區域型 PMax（台北／台中）</b><span>ROAS 7.30／4.52，日均花費不到 105 元。階梯式加碼。</span></li>
+<li><b>TW 通用字</b><span>ROAS 4.02，唯一的新客開發引擎，僅佔 8.2% 預算。</span></li>
+</ul>
+</div>
+<div class="act a-dn">
+<div class="ah">↓ 降低</div>
+<ul>
+<li><b>TW｜購物｜all</b><span>ROAS 0.62，CPA 3,720 元。先減半，診斷後再定。</span></li>
+<li><b>TW｜搜尋｜雲織鞋</b><span>ROAS 0.98（前期 2.24）。商品端釐清前先縮減。</span></li>
+<li><b>平板出價</b><span>ROAS 1.67，低於全站。調降出價調整係數。</span></li>
+</ul>
+</div>
+<div class="act a-st">
+<div class="ah">✕ 停止</div>
+<ul>
+<li><b>TW｜需求開發｜高跟鞋</b><span>花 3,561、轉換 0、營收 0。</span></li>
+<li><b>TW｜需求開發｜迪士尼</b><span>花 3,559、轉換 0、營收 0。</span></li>
+<li><b>TW｜需求開發｜樂福鞋</b><span>花 3,558、轉換 1、ROAS 0.32。</span></li>
+<li><b>TW｜搜尋｜產品字</b><span>CPC 52 元、ROAS 0.47。查完否定字再重啟。</span></li>
+</ul>
+</div>
+<div class="act a-ts">
+<div class="ah">⚗ 測試／釐清</div>
+<ul>
+<li><b>高跟鞋 PMax 為何只花 241 元</b><span>ROAS 9.48。若是誤設限額，解除即是營收。</span></li>
+<li><b>Demand Gen 轉換追蹤是否失效</b><span>關閉前必查。5 分鐘的事，影響 1.07 萬的判斷。</span></li>
+<li><b>7/07 為何單日 ROAS 5.66</b><span>當天有無電子報／活動？找出來就能複製。</span></li>
+<li><b>高雄／台南／桃園區域 PMax</b><span>帳號內已有活動但未啟用，可比照台北架構測試。</span></li>
+</ul>
+</div>
+</div>
+
+<h3 style="margin-top:44px">預算重分配建議（下週）</h3>
+<div class="tw">
+<table>
+<thead><tr><th>項目</th><th class="n">本週</th><th class="n">建議</th><th class="n">變動</th><th>理由（引用實際數據）</th></tr></thead>
+<tbody>
+<tr><td><b>需求開發 3 檔</b></td><td class="n">10,678</td><td class="n">0</td><td class="n" style="color:var(--red)"><b>−100%</b></td><td>7 天 66.5 萬曝光、13,724 點擊、<b>成交 1 筆</b>。ROAS 0.11。（<b>但需先確認追蹤設定</b>）</td></tr>
+<tr><td><b>TW｜搜尋｜產品字</b></td><td class="n">3,597</td><td class="n">0</td><td class="n" style="color:var(--red)"><b>−100%</b></td><td>CPC 52.13 元（全站最貴），ROAS 0.47。暫停後清理否定字再重啟。</td></tr>
+<tr><td><b>TW｜購物｜all</b></td><td class="n">7,516</td><td class="n">3,500</td><td class="n" style="color:var(--amber)"><b>−53%</b></td><td>ROAS 0.62、CPA 3,720 元。與 PMax 常態疑似互相搶量，先縮減再診斷。</td></tr>
+<tr><td><b>TW｜搜尋｜雲織鞋</b></td><td class="n">7,129</td><td class="n">4,000</td><td class="n" style="color:var(--amber)"><b>−44%</b></td><td>ROAS 由 2.24 跌至 0.98。CTR 仍有 10.85%——<b>問題在商品頁不在廣告</b>，釐清前先縮減。</td></tr>
+<tr><td><b>HKMO｜搜尋｜品牌字</b></td><td class="n">3,927</td><td class="n">6,000</td><td class="n" style="color:var(--green)"><b>+53%</b></td><td>ROAS <b>8.66</b>（全站最高），CPA 僅 16 元。明顯被預算限制。</td></tr>
+<tr><td><b>HK&MO｜PMax｜常態</b></td><td class="n">4,709</td><td class="n">8,000</td><td class="n" style="color:var(--green)"><b>+70%</b></td><td>ROAS 5.66，是台灣同類（2.98）的 1.9 倍。港澳競爭尚未飽和。</td></tr>
+<tr><td><b>TW｜PMax｜taipei</b></td><td class="n">719</td><td class="n">1,500</td><td class="n" style="color:var(--green)"><b>+109%</b></td><td>ROAS 7.30。<b>階梯式加碼</b>——樣本僅 30 筆轉換，設定 ROAS 跌破 4 即停止加碼。</td></tr>
+<tr><td><b>TW｜PMax｜taichung</b></td><td class="n">736</td><td class="n">1,200</td><td class="n" style="color:var(--green)"><b>+63%</b></td><td>ROAS 4.52。同上，階梯式加碼。</td></tr>
+<tr><td><b>TW｜搜尋｜通用字</b></td><td class="n">7,729</td><td class="n">11,000</td><td class="n" style="color:var(--green)"><b>+42%</b></td><td>ROAS 4.02。<b>唯一能開發新客的搜尋層</b>，不能只靠品牌字收割。</td></tr>
+<tr><td><b>TW｜PMax｜常態｜高跟鞋</b></td><td class="n">241</td><td class="n">待確認</td><td class="n">—</td><td>ROAS 9.48 卻只花 241 元。<b>先查明是否誤設限額，再決定預算。</b></td></tr>
+<tr style="background:var(--tint)"><td><b>其餘維持不變</b></td><td class="n">47,093</td><td class="n">47,093</td><td class="n">▬</td><td>品牌字（TW）30,635、PMax 常態 13,024、港澳通用字 3,434。</td></tr>
+</tbody>
+<tfoot>
+<tr><td><b>總計</b></td><td class="n"><b>94,074</b></td><td class="n"><b>~82,300</b></td><td class="n"><b>−12.5%</b></td><td><b>總預算不增反減，但預估 ROAS 由 3.60 提升至 4.5 以上。省下的 1.2 萬可作為檔期預備金。</b></td></tr>
+</tfoot>
+</table>
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 8 -->
+<section class="page" id="dash">
+<div class="wrap">
+<div class="tag">Page 08 — Analyst Dashboard</div>
+<h2>數據儀表板</h2>
+
+<h3>Overall KPI ── 本週 vs 上週</h3>
+<div class="tw">
+<table>
+<thead><tr><th>指標</th><th class="n">本週 (7/06–7/12)</th><th class="n">上週 (6/29–7/05)</th><th class="n">變動</th></tr></thead>
+<tbody>
+<tr><td>花費</td><td class="n">NT$94,074</td><td class="n">NT$94,259</td><td class="n flat">−0.2%</td></tr>
+<tr><td>曝光</td><td class="n">1,098,507</td><td class="n">1,096,281</td><td class="n flat">+0.2%</td></tr>
+<tr><td>點擊</td><td class="n">25,557</td><td class="n">24,494</td><td class="n up">+4.3%</td></tr>
+<tr><td>CTR</td><td class="n">2.33%</td><td class="n">2.23%</td><td class="n up">+4.5%</td></tr>
+<tr><td>CPC</td><td class="n">NT$3.68</td><td class="n">NT$3.85</td><td class="n up">−4.4%</td></tr>
+<tr><td>轉換數</td><td class="n">1,901</td><td class="n">1,302</td><td class="n up">+46.0%</td></tr>
+<tr><td>轉換價值</td><td class="n">NT$338,653</td><td class="n">NT$255,204</td><td class="n up">+32.7%</td></tr>
+<tr><td>CPA</td><td class="n">NT$49</td><td class="n">NT$72</td><td class="n up">−31.6%</td></tr>
+<tr style="background:var(--greenbg)"><td><b>ROAS</b></td><td class="n"><b>3.60</b></td><td class="n"><b>2.71</b></td><td class="n up"><b>+0.89</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="ch">
+<h3>每日趨勢：花費 vs ROAS</h3>
+<div class="leg"><span><span class="sw" style="background:#2a78d6"></span>每日花費</span><span><span class="sw" style="background:#1baf7a"></span>每日 ROAS</span></div>
+<div class="cbox"><canvas id="dayChart" role="img" aria-label="每日花費與 ROAS 折線圖：7/07 ROAS 達高點 5.66，7/12 花費最高但 ROAS 最低 2.59。">7/06 花費 11,822 ROAS 4.77；7/07 花費 13,410 ROAS 5.66；7/08 花費 12,959 ROAS 2.91；7/09 花費 12,536 ROAS 2.66；7/10 花費 14,817 ROAS 3.02；7/11 花費 13,233 ROAS 3.85；7/12 花費 15,297 ROAS 2.59。</canvas></div>
+<p class="muted" style="margin-top:12px"><b>注意 7/12：</b>全週花費最高（15,297 元），ROAS 卻最低（2.59）。<b>花越多、賺越少</b>——增量預算流向了低效活動。</p>
+</div>
+
+<h3 style="margin-top:40px">Campaign Table（全部 15 檔有花費活動）</h3>
+<div class="tw">
+<table>
+<thead><tr><th>活動</th><th class="n">花費</th><th class="n">營收</th><th class="n">ROAS</th><th class="n">CPA</th><th class="n">CTR</th><th class="n">CPC</th><th class="n">轉換</th><th>決策</th></tr></thead>
+<tbody>
+<tr><td>TW｜PMax｜常態｜高跟鞋</td><td class="n">241</td><td class="n">2,284</td><td class="n"><b>9.48</b></td><td class="n">46</td><td class="n">2.28%</td><td class="n">3.44</td><td class="n">5.2</td><td><span class="pill p-watch">查設定</span></td></tr>
+<tr><td>HKMO｜搜尋｜品牌字</td><td class="n">3,927</td><td class="n">33,997</td><td class="n"><b>8.66</b></td><td class="n">16</td><td class="n">30.73%</td><td class="n">7.22</td><td class="n">246.9</td><td><span class="pill p-up">加碼</span></td></tr>
+<tr><td>TW｜PMax｜taipei</td><td class="n">719</td><td class="n">5,250</td><td class="n"><b>7.30</b></td><td class="n">24</td><td class="n">0.54%</td><td class="n">2.89</td><td class="n">30.0</td><td><span class="pill p-up">階梯加碼</span></td></tr>
+<tr><td>TW｜搜尋｜品牌字</td><td class="n">30,635</td><td class="n">175,198</td><td class="n"><b>5.72</b></td><td class="n">31</td><td class="n">33.76%</td><td class="n">8.00</td><td class="n">983.8</td><td><span class="pill p-keep">維持</span></td></tr>
+<tr><td>HK&MO｜PMax｜常態</td><td class="n">4,709</td><td class="n">26,633</td><td class="n"><b>5.66</b></td><td class="n">53</td><td class="n">1.40%</td><td class="n">7.55</td><td class="n">89.4</td><td><span class="pill p-up">加碼</span></td></tr>
+<tr><td>TW｜PMax｜taichung</td><td class="n">736</td><td class="n">3,325</td><td class="n">4.52</td><td class="n">39</td><td class="n">0.56%</td><td class="n">3.90</td><td class="n">19.0</td><td><span class="pill p-up">階梯加碼</span></td></tr>
+<tr><td>TW｜搜尋｜通用字</td><td class="n">7,729</td><td class="n">31,064</td><td class="n">4.02</td><td class="n">61</td><td class="n">5.99%</td><td class="n">4.64</td><td class="n">126.9</td><td><span class="pill p-up">加碼</span></td></tr>
+<tr><td>TW｜PMax｜常態</td><td class="n">13,024</td><td class="n">38,781</td><td class="n">2.98</td><td class="n">43</td><td class="n">1.70%</td><td class="n">4.33</td><td class="n">303.6</td><td><span class="pill p-keep">維持</span></td></tr>
+<tr><td>HK&MO｜搜尋｜通用字</td><td class="n">3,434</td><td class="n">7,682</td><td class="n">2.24</td><td class="n">97</td><td class="n">11.35%</td><td class="n">23.20</td><td class="n">35.5</td><td><span class="pill p-keep">維持</span></td></tr>
+<tr style="background:var(--amberbg)"><td>TW｜搜尋｜雲織鞋｜台港澳</td><td class="n">7,129</td><td class="n">7,002</td><td class="n">0.98</td><td class="n">133</td><td class="n">10.85%</td><td class="n">13.43</td><td class="n">53.7</td><td><span class="pill p-watch">警戒</span></td></tr>
+<tr style="background:var(--redbg)"><td>TW｜購物｜all</td><td class="n">7,516</td><td class="n">4,623</td><td class="n">0.62</td><td class="n">3,720</td><td class="n">1.13%</td><td class="n">8.28</td><td class="n">2.0</td><td><span class="pill p-kill">縮減</span></td></tr>
+<tr style="background:var(--redbg)"><td>TW｜搜尋｜產品字</td><td class="n">3,597</td><td class="n">1,683</td><td class="n">0.47</td><td class="n">899</td><td class="n">6.21%</td><td class="n">52.13</td><td class="n">4.0</td><td><span class="pill p-kill">暫停</span></td></tr>
+<tr style="background:var(--redbg)"><td>TW｜需求開發｜樂福鞋</td><td class="n">3,558</td><td class="n">1,130</td><td class="n">0.32</td><td class="n">3,558</td><td class="n">1.91%</td><td class="n">0.83</td><td class="n">1.0</td><td><span class="pill p-kill">關閉</span></td></tr>
+<tr style="background:var(--redbg)"><td>TW｜需求開發｜高跟鞋</td><td class="n">3,561</td><td class="n">0</td><td class="n">0.00</td><td class="n">—</td><td class="n">2.30%</td><td class="n">0.68</td><td class="n">0.0</td><td><span class="pill p-kill">關閉</span></td></tr>
+<tr style="background:var(--redbg)"><td>TW｜需求開發｜迪士尼</td><td class="n">3,559</td><td class="n">0</td><td class="n">0.00</td><td class="n">—</td><td class="n">1.97%</td><td class="n">0.86</td><td class="n">0.0</td><td><span class="pill p-kill">關閉</span></td></tr>
+</tbody>
+<tfoot>
+<tr><td><b>合計</b></td><td class="n"><b>94,074</b></td><td class="n"><b>338,653</b></td><td class="n"><b>3.60</b></td><td class="n"><b>49</b></td><td class="n"><b>2.33%</b></td><td class="n"><b>3.68</b></td><td class="n"><b>1,901</b></td><td></td></tr>
+</tfoot>
+</table>
+</div>
+<p class="muted">帳號共 404 檔活動，本表已列出<b>全部 15 檔本週有花費者</b>，其餘 389 檔本週花費為 0（歷年遺留舊活動）。</p>
+
+<h3 style="margin-top:40px">Ad Group Table（主要廣告群組）</h3>
+<div class="tw">
+<table>
+<thead><tr><th>廣告群組</th><th>所屬活動</th><th class="n">花費</th><th class="n">ROAS</th><th class="n">CTR</th><th class="n">CPC</th><th>決策</th></tr></thead>
+<tbody>
+<tr><td>品牌字</td><td>TW｜搜尋｜品牌字</td><td class="n">31,867</td><td class="n">5.91</td><td class="n">33.68%</td><td class="n">8.15</td><td><span class="pill p-keep">維持</span></td></tr>
+<tr><td>通用字</td><td>TW｜搜尋｜通用字</td><td class="n">8,312</td><td class="n">3.81</td><td class="n">5.99%</td><td class="n">4.64</td><td><span class="pill p-up">加碼</span></td></tr>
+<tr><td>所有</td><td>TW｜購物｜all</td><td class="n">8,095</td><td class="n">0.56</td><td class="n">1.13%</td><td class="n">8.60</td><td><span class="pill p-kill">縮減</span></td></tr>
+<tr><td>3D零感雲織鞋</td><td>TW｜搜尋｜雲織鞋</td><td class="n">7,001</td><td class="n">1.06</td><td class="n">10.53%</td><td class="n">13.11</td><td><span class="pill p-watch">警戒</span></td></tr>
+<tr><td>全能高跟鞋</td><td>TW｜需求開發｜高跟鞋</td><td class="n">3,552</td><td class="n">0.00</td><td class="n">2.29%</td><td class="n">0.68</td><td><span class="pill p-kill">關閉</span></td></tr>
+<tr><td>D+AF</td><td>TW｜搜尋｜產品字</td><td class="n">3,575</td><td class="n">0.47</td><td class="n">6.49%</td><td class="n">47.67</td><td><span class="pill p-kill">暫停</span></td></tr>
+<tr><td>樂福</td><td>TW｜需求開發｜樂福鞋</td><td class="n">3,548</td><td class="n">0.32</td><td class="n">1.93%</td><td class="n">0.83</td><td><span class="pill p-kill">關閉</span></td></tr>
+<tr><td>迪士尼</td><td>TW｜需求開發｜迪士尼</td><td class="n">3,555</td><td class="n">0.00</td><td class="n">1.99%</td><td class="n">0.86</td><td><span class="pill p-kill">關閉</span></td></tr>
+<tr><td>港澳品牌字</td><td>HKMO｜搜尋｜品牌字</td><td class="n">3,783</td><td class="n">10.64</td><td class="n">30.97%</td><td class="n">7.28</td><td><span class="pill p-up">加碼</span></td></tr>
+<tr><td>D+AF_港澳品牌字(中)</td><td>HK&MO｜搜尋｜通用字</td><td class="n">3,188</td><td class="n">1.70</td><td class="n">11.68%</td><td class="n">20.44</td><td><span class="pill p-keep">維持</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">廣告群組資料區間為 2026-07-07 至 07-13（Google Ads 回傳區間與活動層級相差一日），故數值與 Campaign Table 略有出入。PMax 活動不提供廣告群組層級拆分，故未列入。</p>
+
+<div class="note">
+<strong>為什麼沒有 Ad Creative Table</strong>
+Meta 版有素材層級的 CTR／完看率／儲存數。<strong>本帳號主力為搜尋廣告與 PMax</strong>：搜尋廣告為回應式文字廣告（由 Google 自動組合標題與描述），PMax 素材為自動化投放，兩者皆不提供如 Meta 的創意層級成效指標。<strong>Google 的等價分析單位是「關鍵字」與「搜尋字詞」，而這正是本報告尚未取得、且列為下週最高優先的資料。</strong>
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 9 -->
+<section class="page" id="funnel">
+<div class="wrap">
+<div class="tag">Page 09 — Funnel</div>
+<h2>漏斗分析</h2>
+
+<div class="note">
+<strong>漏斗中段資料不存在</strong>
+Google Ads 提供曝光、點擊、轉換三個階段，<strong>但不提供 Landing Page View、Add to Cart、Initiate Checkout 等站內事件</strong>（這些屬於 GA4／Tag Manager 的範疇，非 Ads API 欄位）。以下僅呈現可驗證的階段，中間層一律標示 N/A，不做推測。
+</div>
+
+<div class="fun">
+<div class="fs">
+<div class="fl">曝光</div>
+<div class="fbar"><div class="ff" style="width:100%">1,098,507</div></div>
+<div class="fd">100%</div>
+</div>
+<div class="fs">
+<div class="fl">點擊</div>
+<div class="fbar"><div class="ff" style="width:2.33%;min-width:100px">25,557</div></div>
+<div class="fd">CTR <b>2.33%</b><br>流失 97.67%</div>
+</div>
+<div class="fs">
+<div class="fl">到達網頁 (LPV)</div>
+<div class="fbar"><div class="ff na" style="width:100%;padding-left:14px">N/A — Google Ads 未提供</div></div>
+<div class="fd">需 GA4 補齊</div>
+</div>
+<div class="fs">
+<div class="fl">加入購物車</div>
+<div class="fbar"><div class="ff na" style="width:100%;padding-left:14px">N/A — Google Ads 未提供</div></div>
+<div class="fd">需 GA4 補齊</div>
+</div>
+<div class="fs">
+<div class="fl">轉換（購買）</div>
+<div class="fbar"><div class="ff warn" style="width:7.44%;min-width:100px">1,901</div></div>
+<div class="fd">轉換率 <b>7.44%</b><br>流失 92.56%</div>
+</div>
+</div>
+
+<div class="two" style="margin-top:36px">
+<div class="box">
+<h3>最大的絕對流失</h3>
+<p style="font-size:14px;color:var(--ink2);margin-bottom:0"><b>曝光 → 點擊：流失 97.67%。</b><br>109.8 萬次曝光只換到 25,557 次點擊。<b>但這個數字被「需求開發」嚴重扭曲</b>——那三檔貢獻了 66.5 萬次曝光（佔 60.5%），卻幾乎零價值。<br><br><b>若排除需求開發，真實 CTR 為 2.73%</b>——對電商搜尋廣告而言屬健康水準。</p>
+</div>
+<div class="box g">
+<h3>真正的好消息</h3>
+<p style="font-size:14px;color:var(--ink2);margin-bottom:0"><b>點擊 → 轉換：7.44%。</b><br>每 13 個點進網站的人，就有 1 個買單。<br><br><b>對照 Meta 版：Meta 的點擊→購買轉換率是 1.14%（每 88 人成交 1 筆）。</b><br><br>Google 搜尋流量的轉換效率是 Meta 的 <b>6.5 倍</b>——因為搜尋的人本來就帶著購買意圖而來。<b>這是 Google 渠道最大的結構性優勢。</b></p>
+</div>
+</div>
+
+<div class="note blue" style="margin-top:28px">
+<strong>但這個 7.44% 有一個隱藏的真相</strong>
+拆開來看：<strong>品牌字的轉換率是 25.7%</strong>（3,828 點擊 → 984 轉換），<strong>需求開發的轉換率是 0.007%</strong>（13,724 點擊 → 1 轉換）。<strong>全站 7.44% 是這兩個極端平均出來的假象。</strong><br><br>真正的意義是：<strong>我們的網站對「本來就想買的人」轉換得非常好，對「不想買的人」則完全無效。</strong>這代表官網體驗沒有嚴重問題——<strong>問題純粹在於我們花錢買了太多不想買的人。</strong>這也是為什麼本報告的核心建議是「停止買錯的流量」，而不是「優化網站」。
+</div>
+
+</div>
+</section>
+
+<!-- PAGE 10 -->
+<section class="page" id="ceo" style="border-bottom:none">
+<div class="wrap">
+<div class="tag">Page 10 — CEO Final Message</div>
+<h2>給 CEO 的話</h2>
+
+<div class="final">
+<p>本週我們花了 <strong>NT$9.4 萬</strong>，和上週幾乎一模一樣（少了 185 元）。但營收從 25.5 萬變成 <strong>33.9 萬</strong>，ROAS 從 2.71 拉到 <strong>3.60</strong>。<strong>我們沒有多花一塊錢，卻多賺了 8.3 萬。</strong></p>
+
+<p>這是好消息。但我必須誠實地說：<strong>這次成長，我們並沒有做對什麼。</strong>沒有新檔期、沒有新素材、沒有策略調整。營收上升，主要是因為品牌字的效率自己變好了——那是過去累積的品牌力在發揮作用，不是本週的操作成果。</p>
+
+<div class="pull">「我們的廣告費有一半是在收割既有品牌力，不是在開發新客。品牌字愈強，愈掩蓋開發端的弱。」</div>
+
+<p>真正需要您知道的是另一件事。<strong>同一週，我們有 30.7% 的預算——將近 2.9 萬——投在 ROAS 低於 1 的活動上，淨損 1.45 萬。</strong>其中三檔「需求開發」廣告，七天買到 66.5 萬次曝光、13,724 次點擊，<strong>總共成交 1 筆訂單</strong>。</p>
+
+<p>這些廣告的 CPC 只有 0.68 元，便宜得不可思議。<strong>但便宜的點擊不是便宜，是免費的無效。</strong>它們把後台的數字撐得很漂亮——曝光破百萬、點擊破萬——而生意是零。這是廣告投放最經典的陷阱：<strong>我們買到了「看起來像成效」的東西。</strong></p>
+
+<p>與此同時，真正賺錢的活動正在挨餓。<strong>港澳品牌字 ROAS 8.66，是全站最高，卻只拿到 4.2% 的預算。台北的區域廣告 ROAS 7.30，七天只花了 719 元。</strong>還有一檔高跟鞋 PMax，ROAS 9.48，七天只花了 241 元——<strong>我懷疑是設定被誤設限額，而這需要 5 分鐘就能查清楚。</strong></p>
+
+<div class="pull">「好資產被餓著，壞資產被餵著。這不是市場的問題，是預算分配的問題。」</div>
+
+<p>還有一個結構性發現值得您注意：<strong>港澳市場的每一塊錢，比台灣多賺 72%。</strong>港澳只拿走 12.8% 的預算，卻貢獻 20.2% 的營收。同樣是 PMax，台灣 ROAS 2.98，港澳 5.66。<strong>那裡的競爭還沒飽和，而我們幾乎沒有在投。</strong></p>
+
+<p>最後，關於渠道。<strong>Google 的點擊→購買轉換率是 7.44%，Meta 是 1.14%——我們的 Google 流量轉換效率是 Meta 的 6.5 倍。</strong>這不是因為 Google 比較厲害，是因為搜尋的人本來就帶著購買意圖而來。<strong>這代表：Google 應該是我們的「收割」渠道，Meta 是「開發」渠道。兩者的 KPI 不該用同一把尺量。</strong></p>
+
+<p><strong>下一步，我建議三件事：</strong></p>
+<p><strong>一、關掉那三檔需求開發廣告，暫停產品字廣告。</strong>這會立刻省下 1.4 萬，且不損失任何營收。<strong>但關閉前請務必先確認 Demand Gen 的轉換追蹤是否正常掛載</strong>——若是追蹤失效，我們會誤殺一個其實有效的渠道。這是 5 分鐘的事，但影響 1.07 萬的判斷。</p>
+<p><strong>二、把省下的錢移到港澳。</strong>港澳品牌字 +50%、港澳 PMax +70%。這是本週最明確、風險最低的加碼。</p>
+<p><strong>三、查清楚三個「為什麼」：</strong>高跟鞋 PMax 為何只花 241 元？7/07 為何單日 ROAS 衝到 5.66？雲織鞋 CTR 10.85% 卻為何賣不動？<strong>這三個問題不用花一毛錢，但答案可能比任何加碼都值錢。</strong></p>
+
+<div class="pull">「在總預算不增反減的前提下，光是把錢從虧錢的地方搬到賺錢的地方，ROAS 就有機會從 3.60 拉到 4.5 以上——每週多賺 8–13 萬，不需要增加任何行銷預算。」</div>
+
+<p style="color:var(--ink3);font-size:14px"><strong>兩點必須提醒：</strong>（1）本週只有 7 天資料，樣本較小，單週波動會被放大。高跟鞋 PMax 的 ROAS 9.48 僅建立在 241 元花費與 5 筆轉換上，<strong>這個數字不穩定</strong>，不宜據此大幅加碼。所有加碼建議均已採階梯式與停損紀律。（2）本報告的所有結論建立在 Google Ads 回傳的轉換數據上；<strong>若轉換追蹤本身有設定問題，結論會隨之改變。</strong>這是關閉任何活動前必須先確認的前提。</p>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+所有數據取自 Google Ads MCP（快客數據），帳號 D+AF朵芙時尚（3697790748），區間 2026-07-06 至 2026-07-12，對照組為 2026-06-29 至 2026-07-05。<br>
+轉換價值為 Google Ads 直接回傳欄位（conversions_value），非回推值；ROAS = 轉換價值 ÷ 花費。<br>
+裝置別與廣告群組層級資料因 API 回傳區間差異，實際區間為 2026-07-07 至 07-13，已於各頁標示。<br>
+年齡／性別／版位／頻次／素材成效／購物車事件因 Google Ads API 未提供或不適用於本帳號結構，已於各頁明確標示 N/A，未作推測。
+</div>
+</footer>
+
+<script>
+const ink3='#8a837a', line='#e3ded5';
+new Chart(document.getElementById('devChart'),{
+ type:'bar',
+ data:{labels:['行動裝置','電腦','平板','聯網電視'],
+  datasets:[
+   {label:'花費',data:[76602,17700,1300,42],backgroundColor:'#2a78d6',borderRadius:4,yAxisID:'y',barPercentage:.7},
+   {label:'ROAS',data:[3.66,3.71,1.67,35.24],backgroundColor:'#1baf7a',borderRadius:4,yAxisID:'y1',barPercentage:.7}
+  ]},
+ options:{responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label==='花費'?'花費 NT$'+c.parsed.y.toLocaleString():'ROAS '+c.parsed.y.toFixed(2)}}},
+  scales:{
+   x:{grid:{display:false},ticks:{color:ink3}},
+   y:{position:'left',beginAtZero:true,grid:{color:line},ticks:{color:ink3,callback:v=>'NT$'+(v/1000)+'k'}},
+   y1:{position:'right',beginAtZero:true,grid:{display:false},ticks:{color:ink3}}
+  }}
+});
+new Chart(document.getElementById('dayChart'),{
+ type:'line',
+ data:{labels:['7/06 一','7/07 二','7/08 三','7/09 四','7/10 五','7/11 六','7/12 日'],
+  datasets:[
+   {label:'花費',data:[11822,13410,12959,12536,14817,13233,15297],borderColor:'#2a78d6',backgroundColor:'rgba(42,120,214,.08)',borderWidth:2,tension:.3,pointRadius:4,fill:true,yAxisID:'y'},
+   {label:'ROAS',data:[4.77,5.66,2.91,2.66,3.02,3.85,2.59],borderColor:'#1baf7a',borderWidth:2,tension:.3,pointRadius:4,pointStyle:'rectRot',borderDash:[6,3],yAxisID:'y1'}
+  ]},
+ options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+  plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label==='花費'?'花費 NT$'+c.parsed.y.toLocaleString():'ROAS '+c.parsed.y.toFixed(2)}}},
+  scales:{
+   x:{grid:{display:false},ticks:{color:ink3}},
+   y:{position:'left',beginAtZero:true,grid:{color:line},ticks:{color:ink3,callback:v=>'NT$'+(v/1000)+'k'}},
+   y1:{position:'right',beginAtZero:true,max:6,grid:{display:false},ticks:{color:ink3}}
+  }}
+});
+</script>
+</body>
+</html>
